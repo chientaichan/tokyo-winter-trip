@@ -1,4 +1,24 @@
-# Cloudflare Pages 自動部署設定
+# 部署說明
+
+## 目前的狀態（已設定完成）
+
+| 位置 | 網址 | 何時更新 |
+|---|---|---|
+| GitHub Pages | https://chientaichan.github.io/tokyo-winter-trip/ | push 到 `main` 後約 1 分鐘 |
+| Cloudflare | https://tokyo-winter-trip.chientaichan.workers.dev/ | push 時由 `pre-push` hook 自動部署 |
+
+改完 `index.html` 之後只要：
+
+```bash
+git add -A && git commit -m "更新行程" && git push
+```
+
+兩邊就會一起更新。hook 在 `.githooks/pre-push`，新電腦 clone 後要先跑一次
+`git config core.hooksPath .githooks`，並確認 `wrangler login` 已登入。
+
+---
+
+# 附錄：改用 Cloudflare 後台接 Git（選用）
 
 這個倉庫是靜態網頁，`index.html` 就在根目錄，**不需要建置指令**。
 用 Cloudflare 後台接 GitHub，之後每次 `git push` 就會自動部署。
