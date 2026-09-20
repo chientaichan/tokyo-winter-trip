@@ -32,9 +32,9 @@ git push
 
 push 到 `main` 會觸發 Production 部署；push 到其他分支會產生 Preview 網址，方便先看過再合併。
 
-## 限制存取（建議）
+## 限制存取（選用）
 
-頁面含航班、住宿與訂位資訊，`.pages.dev` 網址預設任何人拿到連結都能開。想限制：
+這份是已移除個人資訊的公開版本，通常不需要限制。若日後放了敏感內容，`.pages.dev` 網址預設任何人拿到連結都能開，可以這樣鎖：
 
 - **Cloudflare Access**：專案 → **Settings** → **Access policy** → 開啟，設定只有指定 Email 收到一次性驗證碼才能開啟（Zero Trust 免費方案含 50 人）
 - 或 Preview 部署單獨保護：**Settings → General → Access policy → Protect preview deployments**
