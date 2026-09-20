@@ -131,6 +131,10 @@ section.day{margin-top:44px;display:grid;grid-template-columns:150px minmax(0,1f
 .stop li b{color:var(--ink);font-weight:500}
 .stop.move{background:linear-gradient(to right,transparent 0 94px,var(--soft) 94px);}
 .stop.move time{color:var(--ink-3)}
+.maps{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.maps a{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;line-height:1.4;text-decoration:none;color:var(--ink-2);background:var(--soft);border:1px solid var(--rule);border-radius:999px;padding:3px 10px 3px 8px}
+.maps a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.maps a svg{width:11px;height:11px;flex:0 0 auto;fill:currentColor}
 .route{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:6px;font-size:13px;color:var(--ink-2)}
 .route .arr{color:var(--ink-3)}
 .note{margin-top:8px;font-size:13px;padding:8px 12px;border-radius:6px;background:var(--warn-wash);color:var(--warn-ink);max-width:66ch}
@@ -243,6 +247,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>04:45</time>
       <div>
         <h3>前往桃園機場 <span class="tag t-move">交通</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E6%A1%83%E5%9C%92%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4%E7%AC%AC%E4%BA%8C%E8%88%AA%E5%BB%88" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>桃園機場第二航廈</a>
+        </div>
         <p>清晨出發，建議 05:45 前抵達第二航廈（國際線報到截止為起飛前 60 分鐘）。</p>
       </div>
     </div>
@@ -257,6 +264,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>13:15</time>
       <div>
         <h3>成田機場午餐（第 1 航廈，入境後・保安檢查前） <span class="tag t-food">用餐</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E6%88%90%E7%94%B0%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>成田機場第 1 航廈</a>
+        </div>
         <ul>
           <li><b>回轉壽司みさき</b> — 中央大樓 5F，08:00–20:30（L.O.），一盤 ¥176 起，用豐洲直送的魚。<b>有迴轉壽司的就是這家</b>，第 1 航廈只有它</li>
           <li><b>Sky Food Court</b> — 中央大樓 4F，烏龍麵、義大利麵、泰式等平價攤位，一家人可以各點各的</li>
@@ -270,6 +280,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>14:30</time>
       <div>
         <h3>Skyliner 成田空港站 → 京成上野（約 45 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%E9%A7%85&destination=%E4%BA%AC%E6%88%90%E4%B8%8A%E9%87%8E%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>成田空港站 → 京成上野</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-keisei)"><i>KS</i>京成 Skyliner</span><span class="arr">→</span>京成上野</div>
         <p>全車對號座、有大行李置物區。乘車日 1 個月前上午 9:00 起可在京成官網訂位（1/30 的票 → 12/30 09:00 開賣）；成人約 ¥2,600。</p>
         <p>京成上野 → 住宿：地面步行約 10–12 分。拉行李想輕鬆一點，可在京成上野站內走到<span class="ln" style="--c:var(--line-ginza)"><i>G</i>銀座線</span>上野站，搭一站到稻荷町，出站步行 4 分即到，全程幾乎不用上下坡。</p>
@@ -279,6 +292,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>15:45</time>
       <div>
         <h3>上野住宿・放行李休息</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E7%A8%B2%E8%8D%B7%E7%94%BA%E9%A7%85" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>住宿位置</a>
+        </div>
         <p>公寓式飯店附廚房與大餐桌，後面幾天買的 HARBS 蛋糕、豐洲買的東西都能在房內處理。洗個臉、放下行李就出門，合羽橋的鍋店 17:30 關。</p>
       </div>
     </div>
@@ -286,6 +302,10 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>15:55</time>
       <div>
         <h3>合羽橋道具街・主攻鍋子 <span class="tag t-shop">廚具</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8B%E3%81%A3%E3%81%B1%E6%A9%8B%E9%81%93%E5%85%B7%E8%A1%97" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>合羽橋道具街</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=%E9%87%9C%E6%B5%85%E5%95%86%E5%BA%97" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>釜淺商店</a>
+        </div>
         <p>飯店步行約 10 分鐘。<b>週六有九成以上店家營業</b>（週日只有三成，所以排在今天）。多數店 17:00–17:30 關門，先去鍋店、小物最後逛。</p>
         <ul>
           <li><b>銅源サイトウ（齋藤製作所）</b>（9:30–17:30，週日公休）— 1930 年創業，<b>銅鍋</b>、玉子燒銅鍋、涮涮鍋、炸鍋、南部鐵器壽喜燒鍋，只有今天逛得到</li>
@@ -302,6 +322,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>17:40</time>
       <div>
         <h3>田原町 → 上野廣小路（2 站，約 5 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E7%94%B0%E5%8E%9F%E7%94%BA%E9%A7%85&destination=%E4%B8%8A%E9%87%8E%E5%BA%83%E5%B0%8F%E8%B7%AF%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>田原町 → 上野廣小路</a>
+        </div>
         <div class="route"><span class="ln" style="--c:var(--line-ginza)"><i>G</i>銀座線</span>田原町（合羽橋南端）<span class="arr">→</span>上野廣小路，步行約 4 分到伊豆榮</div>
       </div>
     </div>
@@ -309,6 +332,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>18:00</time>
       <div>
         <h3>伊豆榮 本店・鰻魚飯 <span class="tag t-food">用餐</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E4%BC%8A%E8%B1%86%E6%A0%84%20%E6%9C%AC%E5%BA%97%20%E4%B8%8A%E9%87%8E" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>伊豆榮 本店</a>
+        </div>
         <p>台東區上野 2-12-22，飯店步行約 15 分。營業 11:00–21:00（L.O. 20:15）。</p>
         <p><b>本店確實是離飯店最近的分店。</b>伊豆榮在上野共三家：本店（上野 2-12-22）、不忍亭（上野 2-11-19，就在本店旁）、梅川亭（上野公園 4-34，在公園裡、最遠）。從飯店走過去距離幾乎一樣，本店位子最多。</p>
         <p><b>松套餐 ¥8,800 的內容：</b>先付兩品 → 生魚片 → 炸物 → 煮物（醋物）→ 鰻重 → 甜點。想單吃鰻魚就點鰻重（松/竹/梅）即可，不必訂套餐。</p>
@@ -319,6 +345,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>19:45</time>
       <div>
         <h3>餐後散步：阿美橫丁 <span class="tag t-shop">藥妝比價</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%A1%E3%83%A4%E6%A8%AA%E4%B8%81" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>阿美橫丁</a>
+        </div>
         <p>晚餐慢慢吃完再走。阿美橫丁的松本清、OS Drug、Don Quijote 上野店開到晚，CANMAKE、KATE、Kiss Me、Fasio 等日系開架彩妝都齊，先摸清價格。</p>
         <div class="alt"><b>@cosme STORE 上野丸井店改到 1/31 傍晚</b>（吃完 HARBS 之後），時間比較充裕。</div>
       </div>
@@ -327,6 +356,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>20:15</time>
       <div>
         <h3>回飯店路上採買：超市 <span class="tag t-food">飲用水・早餐食材</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%A8%E3%83%84%20%E6%9D%B1%E4%B8%8A%E9%87%8E%E5%BA%97" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>マルエツ 東上野店</a>
+        </div>
         <p>公寓式飯店房內有完整廚房（IH 爐、冰箱、微波爐、電熱水壺，鍋子、平底鍋、碗盤、刀叉筷、菜刀砧板都備齊），買了就能自己弄早餐，之後幾天早上不必趕著找店。</p>
         <ul>
           <li><b>マルエツ 東上野店</b>（東上野 5-17-11，<b>24 小時</b>）— 回飯店順路、品項最齊，走路約 5 分。水、牛奶、優格、麵包、水果、即食味噌湯一次買齊</li>
@@ -353,6 +385,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>08:30</time>
       <div>
         <h3>早餐・飯店附近 <span class="tag t-food">用餐</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%A8%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%88%E4%B8%8A%E9%87%8E" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>ecute 上野</a>
+        </div>
         <p>JR 上野站內 ecute 上野有麵包與咖啡，或在 公寓式飯店房內簡單吃。</p>
       </div>
     </div>
@@ -360,6 +395,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>09:35</time>
       <div>
         <h3>上野 → 東京（約 8 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E4%B8%8A%E9%87%8E%E9%A7%85&destination=%E6%9D%B1%E4%BA%AC%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>上野 → 東京</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yamanote)"><i>JY</i>JR 山手線 / 京濱東北線</span>上野<span class="arr">→</span>東京</div>
       </div>
     </div>
@@ -367,6 +405,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>10:00</time>
       <div>
         <h3>東京車站一番街・東京動漫人物街 <span class="tag t-sumikko">角落生物</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%88" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>東京動漫人物街</a>
+        </div>
         <ul>
           <li><b>すみっコぐらしshop 東京駅店</b>（B1，10:00–20:30）— 全日本第一家角落生物官方專賣店，有東京車站限定商品</li>
           <li>同一條街還有寶可夢、吉伊卡哇、拉拉熊、Hello Kitty、樂高等約 30 家角色店</li>
@@ -378,6 +419,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>11:00</time>
       <div>
         <h3>先抽號碼牌：回轉壽司 根室花まる KITTE丸之內店 <span class="tag t-food">用餐</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=KITTE%E4%B8%B8%E3%81%AE%E5%86%85" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>KITTE 丸之內</a>
+        </div>
         <p>JP Tower KITTE 5F，從東京車站丸之內側步行約 1 分，11:00–22:00。北海道根室來的迴轉壽司，是東京車站一帶最值得排的迴轉壽司。</p>
         <div class="note"><b>等候常要 1–2 小時。</b>11:00 一開門先去抽號碼牌（官網可看目前等候組數，LINE 會通知），抽完回去逛動漫人物街，時間剛好。</div>
         <div class="alt"><b>不想等就改：</b>東京車站一番街「東京拉麵街」、大丸東京 12–13F 餐廳樓層，都在同一棟或走 3 分鐘內。</div>
@@ -387,6 +431,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>11:20</time>
       <div>
         <h3>等叫號的空檔：TAKE-UP 東京大丸店 <span class="tag t-jewel">輕珠寶</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E4%B8%B8%E6%9D%B1%E4%BA%AC%E5%BA%97" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>大丸東京店</a>
+        </div>
         <p>大丸東京店 3F（八重洲口出來就是），與抽號碼牌的 KITTE 走路約 5 分鐘。TAKE-UP 是 1979 年創立、1981 年在澀谷 PARCO 開出日本第一家耳環專門店的品牌，全部 made in Japan，K10／K18、天然石與珍珠款為主，一對多在 ¥15,000–35,000。</p>
         <p>招牌是 1988 年就有的「Second Pierce（第二對耳環）」系列，專為剛換耳環的人設計，細緻好戴。</p>
         <div class="alt">同一層樓還有其他輕珠寶櫃可以一起比較；大丸東京 10:00–20:00。</div>
@@ -396,6 +443,10 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>13:30</time>
       <div>
         <h3>在東京車站分頭（男生組自由選擇）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%9D%B1%E4%BA%AC%E9%A7%85&destination=%E6%96%B0%E5%A4%A7%E4%B9%85%E4%BF%9D%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>東京 → 新大久保</a>
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%9D%B1%E4%BA%AC%E9%A7%85&destination=%E4%B8%8A%E9%87%8E%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>東京 → 上野</a>
+        </div>
         <div class="route"><b>女生組</b><span class="ln sq" style="--c:var(--line-chuo)"><i>JC</i>JR 中央線快速</span>東京<span class="arr">→</span>新宿<span class="arr">→</span><span class="ln sq" style="--c:var(--line-yamanote)"><i>JY</i>山手線</span>新大久保（約 25 分）</div>
         <p><b>男生組</b>：廚具已經在 1/30 逛完，今天下午自由安排，可以一起去新大久保，或搭 JR 回上野（8 分）——</p>
         <ul>
@@ -409,6 +460,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>14:00</time>
       <div>
         <h3>女生組：新大久保韓國城（白天逛） <span class="tag t-shop">韓系化妝品</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%A4%A7%E4%B9%85%E4%BF%9D%20%E3%82%B3%E3%83%AA%E3%82%A2%E3%83%B3%E3%82%BF%E3%82%A6%E3%83%B3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>新大久保韓國城</a>
+        </div>
         <ul>
           <li><b>SKIN GARDEN</b> — 新大久保品項最多的韓妝店之一</li>
           <li><b>fwee</b> — 韓國人氣彩妝在日本的第一家店</li>
@@ -423,6 +477,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>16:40</time>
       <div>
         <h3>新大久保 → 上野（約 25 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%96%B0%E5%A4%A7%E4%B9%85%E4%BF%9D%E9%A7%85&destination=%E5%BE%A1%E5%BE%92%E7%94%BA%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>新大久保 → 御徒町</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yamanote)"><i>JY</i>JR 山手線</span>新大久保<span class="arr">→</span>池袋方向<span class="arr">→</span>御徒町</div>
         <p>先回到上野的人可以早點去 HARBS 排隊。</p>
       </div>
@@ -431,6 +488,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>17:10</time>
       <div>
         <h3>全員會合：HARBS 上野店・水果千層 <span class="tag t-sweet">HARBS</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=PARCO_ya%E4%B8%8A%E9%87%8E" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>PARCO_ya 上野</a>
+        </div>
         <p>PARCO_ya 上野 2F（台東區上野 3-24-6），內用 10:00–20:00，上野廣小路站直結、御徒町站步行 1 分。招牌水果千層一片份量大，兩人分一片剛好。</p>
         <div class="note">HARBS 不接受訂位。若排隊太長，先上樓吃晚餐、回頭再吃，或外帶回住宿。</div>
       </div>
@@ -439,6 +499,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>18:15</time>
       <div>
         <h3>@cosme STORE 上野丸井店 <span class="tag t-shop">化妝品</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E9%87%8E%E3%83%9E%E3%83%AB%E3%82%A4" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>上野丸井</a>
+        </div>
         <p>上野 6-15-1，上野丸井 B1F，從 PARCO_ya 走過去約 5 分鐘（銀座線上野站步行 1 分）。週日約營業到 20:30，現在來有 45 分鐘以上可以慢慢挑。</p>
         <p>2023 年大幅擴大後品項很齊，日韓話題彩妝與排行榜商品都有。今天先看、把想買的抓成清單，<b>2/1 下午在原宿的 @cosme TOKYO 三層樓旗艦店補齊</b>。</p>
         <div class="note">上野丸井的營業時間會依季節調整，出發前再確認一次；<b>東京車站沒有 @cosme</b>，最近的是一站外的 Lumine 有樂町 7F。</div>
@@ -474,6 +537,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>09:15</time>
       <div>
         <h3>上野 → 澀谷（直達免轉乘，約 30 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E4%B8%8A%E9%87%8E%E9%A7%85&destination=%E6%B8%8B%E8%B0%B7%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>上野 → 澀谷</a>
+        </div>
         <div class="route"><span class="ln" style="--c:var(--line-ginza)"><i>G</i>銀座線</span>稻荷町 / 上野<span class="arr">→</span>澀谷（終點）</div>
       </div>
     </div>
@@ -481,6 +547,10 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>10:00</time>
       <div>
         <h3>SHIBUYA109・MIYASHITA PARK <span class="tag t-shop">日韓潮牌</span><span class="tag t-sport">運動</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=SHIBUYA109" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>SHIBUYA109</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=MIYASHITA%20PARK" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>MIYASHITA PARK</a>
+        </div>
         <ul>
           <li><b>SHIBUYA109</b>（10:00 開門）— 日系少女潮牌大本營，樓上樓下都有平價服飾、飾品與彩妝櫃</li>
           <li><b>MIYASHITA PARK</b> — 韓牌 <b>Matin Kim</b> 在日本的第一家常設店</li>
@@ -492,6 +562,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>11:10</time>
       <div>
         <h3>澀谷 → 惠比壽（1 站）＋步行約 8 分</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%B8%8B%E8%B0%B7%E9%A7%85&destination=%E3%83%94%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%AB%E3%83%BC%E3%82%AC%E3%83%BC%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%8F%E3%82%A6%E3%82%B9%E6%9D%B1%E4%BA%AC&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>澀谷 → Peter Luger</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yamanote)"><i>JY</i>JR 山手線</span>澀谷<span class="arr">→</span>惠比壽</div>
       </div>
     </div>
@@ -499,6 +572,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>11:30</time>
       <div>
         <h3>Peter Luger Steak House Tokyo <span class="tag t-food">用餐</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%83%94%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%AB%E3%83%BC%E3%82%AC%E3%83%BC%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%8F%E3%82%A6%E3%82%B9%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Peter Luger 東京</a>
+        </div>
         <p>澀谷區惠比壽 4-19-19（店在惠比壽，不在澀谷）。午餐 11:00–15:00（L.O. 14:00），另收 10% 服務費，全店無現金。</p>
         <ul>
           <li>招牌乾式熟成 <b>Porterhouse</b> 依人數點，配德式炸薯與奶油菠菜</li>
@@ -511,6 +587,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>13:15</time>
       <div>
         <h3>吃完直接回原宿：惠比壽 → 原宿（2 站，約 5 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85&destination=%E5%8E%9F%E5%AE%BF%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>惠比壽 → 原宿</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yamanote)"><i>JY</i>JR 山手線</span>惠比壽<span class="arr">→</span>原宿</div>
       </div>
     </div>
@@ -518,6 +597,10 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>13:30</time>
       <div>
         <h3>全員：原宿運動潮牌 <span class="tag t-sport">Nike・adidas</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%83%8A%E3%82%A4%E3%82%AD%E5%8E%9F%E5%AE%BF" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>NIKE HARAJUKU</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%87%E3%82%A3%E3%83%80%E3%82%B9%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E5%8E%9F%E5%AE%BF" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>adidas Brand Center 原宿</a>
+        </div>
         <ul>
           <li><b>NIKE HARAJUKU</b> — 東京最大的 Nike 直營店，2026/9 整修後重新開幕，有客製化服務，JR 原宿站步行約 5 分</li>
           <li><b>adidas Brand Center 原宿</b> — 明治通上的大型旗艦，有球鞋清潔等服務</li>
@@ -530,6 +613,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>14:45</time>
       <div>
         <h3>@cosme TOKYO（原宿站前） <span class="tag t-shop">化妝品</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%83%E3%83%88%E3%82%B3%E3%82%B9%E3%83%A1%E3%83%88%E3%83%BC%E3%82%AD%E3%83%A7%E3%83%BC" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>@cosme TOKYO</a>
+        </div>
         <p>神宮前 1-14-27，JR 原宿站步行 1 分，11:00–21:00。三層樓的旗艦店，依排行榜陳列，日韓彩妝與保養都能試。</p>
         <p>1/31 傍晚已經在 @cosme 上野丸井店看過一輪，<b>這裡用來補買上野沒有的品牌與限定品</b>，效率會高很多。抓 45 分鐘，15:30 往 Matin Kim。</p>
       </div>
@@ -538,6 +624,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>15:30</time>
       <div>
         <h3>Matin Kim 原宿旗艦店（到 16:05） <span class="tag t-shop">韓牌</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=MATIN%20KIM%20%E5%8E%9F%E5%AE%BF" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Matin Kim 原宿</a>
+        </div>
         <p>2026/4 開幕的東京旗艦店，兩層樓、約 59 坪，有旗艦店限定款——這是 Matin Kim 在日本唯一的獨立門市（另一家在澀谷 MIYASHITA PARK 商場內，今天早上已經路過）。從 @cosme TOKYO 走過去約 7 分鐘。</p>
         <p>回原宿站的路上時間還夠的話，可以順便看：</p>
         <ul>
@@ -552,6 +641,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>16:05</time>
       <div>
         <h3>原宿 → 澀谷（1 站，約 3 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E5%8E%9F%E5%AE%BF%E9%A7%85&destination=%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>原宿 → 澀谷 Scramble Square</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yamanote)"><i>JY</i>JR 山手線</span>原宿<span class="arr">→</span>澀谷，澀谷 Scramble Square 與車站直結</div>
       </div>
     </div>
@@ -559,6 +651,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>16:20</time>
       <div>
         <h3>SHIBUYA SKY 看夕陽與夜景（到約 17:40）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>澀谷 Scramble Square</a>
+        </div>
         <p>澀谷 Scramble Square 頂樓，高 229 公尺的露天展望台，入口在 14F。2/1 日落約 17:05，16:20–16:40 入場可以從白天看到夕陽、再到城市點燈，一次看三種景色。</p>
         <ul>
           <li>票價：12 歲以上 ¥3,400（15:00 後時段）、6–11 歲 ¥1,200</li>
@@ -573,6 +668,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>17:40</time>
       <div>
         <h3>Scramble Square → 澀谷 Hikarie（步行約 5–7 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2&destination=%E6%B8%8B%E8%B0%B7%E3%83%92%E3%82%AB%E3%83%AA%E3%82%A8&travelmode=walking" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>步行路線</a>
+        </div>
         <p>從 2F 的空中連通道穿過澀谷站東口到 Hikarie，不用出到馬路上。</p>
       </div>
     </div>
@@ -580,6 +678,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>17:50</time>
       <div>
         <h3>HARBS 澀谷 Hikarie ShinQs 店 <span class="tag t-sweet">HARBS 第二回</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E6%B8%8B%E8%B0%B7%E3%83%92%E3%82%AB%E3%83%AA%E3%82%A8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>澀谷 Hikarie</a>
+        </div>
         <p>Hikarie ShinQs 4F，週一 11:00–21:00。這次換上野沒吃到的口味：季節限定、巧克力，或鹹派＋蛋糕的套餐。</p>
         <div class="alt"><b>中午的牛排還沒消化？</b>可以先上 6F 吃晚餐，19:15 再下來吃 HARBS，營業到 21:00 還來得及。</div>
       </div>
@@ -602,6 +703,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>20:30</time>
       <div>
         <h3>澀谷 → 稻荷町（銀座線直達，約 33 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%B8%8B%E8%B0%B7%E9%A7%85&destination=%E7%A8%B2%E8%8D%B7%E7%94%BA%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>澀谷 → 稻荷町</a>
+        </div>
         <div class="route"><span class="ln" style="--c:var(--line-ginza)"><i>G</i>銀座線</span>澀谷<span class="arr">→</span>稻荷町，步行 4 分回飯店</div>
       </div>
     </div>
@@ -620,6 +724,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>07:15</time>
       <div>
         <h3>上野 → 豐洲市場（約 50 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E4%B8%8A%E9%87%8E%E9%A7%85&destination=%E8%B1%8A%E6%B4%B2%E5%B8%82%E5%A0%B4&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>上野 → 豐洲市場</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yamanote)"><i>JK</i>JR 京濱東北線 / 山手線</span>上野<span class="arr">→</span>新橋<span class="arr">→</span><span class="ln sq" style="--c:var(--line-yurikamome)"><i>U</i>百合海鷗號</span>市場前</div>
         <p>想吃壽司大就得早，8:10 前到場排隊比較實際。</p>
       </div>
@@ -628,6 +735,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>08:10</time>
       <div>
         <h3>豐洲市場早餐：選一家 <span class="tag t-food">用餐</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E8%B1%8A%E6%B4%B2%E5%B8%82%E5%A0%B4" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>豐洲市場</a>
+        </div>
         <ul>
           <li><b>壽司大</b>（水產仲卸賣場棟 3F，5:30–14:00）— 最有名、隊伍也最長的主廚推薦握壽司</li>
           <li><b>大和壽司</b>（青果棟 1F，5:30–13:00）— 築地時代就在排隊的另一家名店，市場前站步行 3 分</li>
@@ -642,6 +752,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>09:30</time>
       <div>
         <h3>魚がし橫丁：廚具與食材 <span class="tag t-shop">採買</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E8%B1%8A%E6%B4%B2%E5%B8%82%E5%A0%B4%20%E9%AD%9A%E3%81%8C%E3%81%97%E6%A8%AA%E4%B8%81" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>魚がし橫丁</a>
+        </div>
         <p>市場內約 70 家專業店家組成的小街，是市場的精華，多數 6:00–14:00 前後營業：</p>
         <ul>
           <li><b>刀具</b>：有次、築地正本、東源正久商店 — 柳刃、出刃、三德刀，可代刻名字（刻字要時間，先問）</li>
@@ -656,6 +769,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>10:40</time>
       <div>
         <h3>豐洲 千客萬來 <span class="tag t-food">小吃</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E8%B1%8A%E6%B4%B2%20%E5%8D%83%E5%AE%A2%E4%B8%87%E6%9D%A5" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>豐洲 千客萬來</a>
+        </div>
         <p>市場旁的江戶街景商業設施，約 70 家店。1F 豐洲江戶前通 10:00–18:00、2F 10:00–22:00（目利き橫丁 10:00–18:00）、3F 美食廣場 10:00–20:00。</p>
         <p>海膽、干貝、鮪魚串燒、玉子燒、可樂餅等邊走邊吃的小吃都在這裡，當作第二輪早午餐。頂樓是萬葉俱樂部溫泉，有免費足湯可以泡。</p>
       </div>
@@ -664,6 +780,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>12:30</time>
       <div>
         <h3>市場前 → 新豐洲（1 站）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E5%B8%82%E5%A0%B4%E5%89%8D%E9%A7%85&destination=%E3%83%81%E3%83%BC%E3%83%A0%E3%83%A9%E3%83%9C%E3%83%97%E3%83%A9%E3%83%8D%E3%83%83%E3%83%84TOKYO&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>市場前 → teamLab</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yurikamome)"><i>U</i>百合海鷗號</span>市場前<span class="arr">→</span>新豐洲，步行 1 分</div>
       </div>
     </div>
@@ -671,6 +790,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>13:00</time>
       <div>
         <h3>teamLab Planets TOKYO（約 2 小時）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%83%81%E3%83%BC%E3%83%A0%E3%83%A9%E3%83%9C%E3%83%97%E3%83%A9%E3%83%8D%E3%83%83%E3%83%84TOKYO" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>teamLab Planets</a>
+        </div>
         <p>江東區豐洲 6-1-16，9:00–22:00（最後入場 21:00），營運延長至 2027 年底。票價浮動，成人 ¥3,800 起、13–17 歲 ¥2,800。</p>
         <div class="note">部分展區要赤腳涉水到膝蓋：穿<b>可捲起的褲子</b>、<b>避免短裙</b>（地面是鏡面），現場有免費置物櫃。務必先買指定時段票。</div>
       </div>
@@ -679,6 +801,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>15:15</time>
       <div>
         <h3>新豐洲 → 銀座（約 20 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%96%B0%E8%B1%8A%E6%B4%B2%E9%A7%85&destination=%E9%8A%80%E5%BA%A7%E4%B8%80%E4%B8%81%E7%9B%AE%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>新豐洲 → 銀座一丁目</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-yurikamome)"><i>U</i>百合海鷗號</span>新豐洲<span class="arr">→</span>豐洲<span class="arr">→</span><span class="ln" style="--c:var(--line-yurakucho)"><i>Y</i>有樂町線</span>銀座一丁目</div>
       </div>
     </div>
@@ -686,6 +811,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>15:40</time>
       <div>
         <h3>銀座購物 <span class="tag t-shop">化妝品</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%E3%83%AD%E3%83%95%E3%83%88" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>銀座 Loft</a>
+        </div>
         <ul>
           <li><b>銀座 Loft</b>（Marronnier Gate 銀座 2）— 日韓彩妝、保養、文具一次逛完，補買清單上還缺的</li>
           <li><b>UNIQLO 銀座旗艦店・GU</b>、<b>伊東屋</b>文具、<b>Ginza Six</b></li>
@@ -697,6 +825,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>18:00</time>
       <div>
         <h3>てんぷら 近藤・天婦羅 Omakase <span class="tag t-food">用餐</span></h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%A6%E3%82%93%E3%81%B7%E3%82%89%E8%BF%91%E8%97%A4%20%E9%8A%80%E5%BA%A7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>てんぷら 近藤</a>
+        </div>
         <p>米其林星級天婦羅，銀座站步行約 5 分。晚餐 17:00 / 18:00 / 19:00 / 20:00 四個時段，每輪 2 小時，套餐約 ¥25,000 起。招牌是切絲炸成的地瓜與胡蘿蔔。</p>
         <div class="note"><b>週日公休、只收電話預約</b>，受理時間是用餐日<b>兩個月前的第一個營業日</b> → 2/2 的位子請在 <b>2026/12/1（二）</b> 一早打 050-5263-0614，會很難打通，要有心理準備。</div>
       </div>
@@ -705,6 +836,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>20:10</time>
       <div>
         <h3>銀座 → 稻荷町（約 15 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E9%8A%80%E5%BA%A7%E9%A7%85&destination=%E7%A8%B2%E8%8D%B7%E7%94%BA%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>銀座 → 稻荷町</a>
+        </div>
         <div class="route"><span class="ln" style="--c:var(--line-ginza)"><i>G</i>銀座線</span>銀座<span class="arr">→</span>稻荷町，步行 4 分回飯店</div>
         <p>回飯店打包行李；免稅品依店家說明整理好，隔天出境要給海關確認。</p>
       </div>
@@ -730,6 +864,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>09:30</time>
       <div>
         <h3>飯店 → 京成上野（步行約 12 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E7%A8%B2%E8%8D%B7%E7%94%BA%E9%A7%85&destination=%E4%BA%AC%E6%88%90%E4%B8%8A%E9%87%8E%E9%A7%85&travelmode=walking" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>步行路線</a>
+        </div>
         <div class="route">拉行李沿昭和通走過去即可；不想走的話<span class="ln" style="--c:var(--line-ginza)"><i>G</i>銀座線</span>稻荷町<span class="arr">→</span>上野（1 站），出站再走 5 分</div>
         <p>京成上野站的剪票口在地下，有電扶梯與電梯，行李好處理。</p>
       </div>
@@ -738,6 +875,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>10:00</time>
       <div>
         <h3>Skyliner 京成上野 → 成田空港（T1，約 45 分）</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E4%BA%AC%E6%88%90%E4%B8%8A%E9%87%8E%E9%A7%85&destination=%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%E9%A7%85&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>京成上野 → 成田空港</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--line-keisei)"><i>KS</i>京成 Skyliner</span>京成上野<span class="arr">→</span>成田空港（第 1 航廈）</div>
         <p>約 20–40 分一班。回程票同樣在乘車日 1 個月前上午 9:00 開賣（2/3 的票 → 1/3 09:00）。</p>
       </div>
@@ -746,6 +886,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>10:45</time>
       <div>
         <h3>成田 T1 南翼報到・出境</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E6%88%90%E7%94%B0%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>成田機場第 1 航廈</a>
+        </div>
         <div class="note"><b>日本免稅新制（2026/11/1 起）：</b>購物時先付含稅價，出境時到機場免稅手續機台出示護照、接受海關確認，之後店家才退稅（購買日起 90 天內有效）。免稅品先別收進托運行李，預留 15–20 分鐘辦理。</div>
       </div>
     </div>
@@ -759,6 +902,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <time>17:00</time>
       <div>
         <h3>桃園機場 → 高鐵桃園站 → 轉乘返家</h3>
+        <div class="maps">
+          <a href="https://www.google.com/maps/dir/?api=1&origin=%E6%A1%83%E5%9C%92%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4%E7%AC%AC%E4%BA%8C%E8%88%AA%E5%BB%88&destination=%E9%AB%98%E9%90%B5%E6%A1%83%E5%9C%92%E7%AB%99&travelmode=transit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>機場 → 高鐵桃園站</a>
+        </div>
         <div class="route"><span class="ln sq" style="--c:var(--tag-shop)"><i>A</i>機捷普通車</span>A13 機場第二航廈<span class="arr">→</span>A18 高鐵桃園站（約 20 分）<span class="arr">→</span><span class="ln sq" style="--c:var(--line-thsr)"><i>HSR</i>台灣高鐵</span>轉乘返家</div>
         <p>機捷<b>直達車不停 A18</b>，要搭藍色普通車；也可搭 705 路客運接駁。落地、提領行李約 50–60 分，高鐵建議訂 17:45–18:30 的車次。</p>
       </div>
@@ -875,6 +1021,7 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
     <div><h3>飯店廚房有什麼</h3><p>公寓式飯店房內是完整開放式廚房：IH 爐、冰箱、微波爐、電熱水壺，鍋子、平底鍋、碗盤、刀叉筷、菜刀砧板、湯杓鍋鏟、廚房剪刀、濾網都備齊，可以自己煮早餐。房內沒有洗衣機，館內有投幣洗衣。牙刷與拖鞋要自備。</p></div>
     <div><h3>飯店旁的超市</h3><p><b>マルエツ 東上野店</b>（東上野 5-17-11，24 小時）步行約 5 分，是最全的一家；<b>マルエツ プチ 稻荷町站前店</b>（東上野 5-1-5，9:00–22:00）與 <b>まいばすけっと 上野站前</b>（東上野 3-20-3，7:00–23:00）更近，水、牛奶、麵包、優格、便當都有。</p></div>
     <div><h3>水果與早餐食材</h3><p>水果去<b>阿美橫丁</b>的水果攤或<b>吉池</b>（御徒町，生鮮很強）最划算，草莓、蜜柑冬天正當季。麵包與熟食可到 JR 上野站內的 <b>ecute 上野</b>。礦泉水整箱買最便宜的是 <b>Don Quijote 上野店</b>，走回飯店約 10 分。</p></div>
+    <div><h3>地圖連結</h3><p>每段移動與主要地點下方都有灰色的地圖按鈕，點了會開 Google 地圖：移動是路線規劃（已設為大眾運輸或步行），地點是店家位置。手機上會直接跳到 Google 地圖 App。</p></div>
     <div><h3>交通卡</h3><p>全程用 Suica（iPhone 錢包可直接加入）搭 JR、地鐵、百合海鷗號，超商也能付款。13 歲以上適用成人票價。</p></div>
     <div><h3>銀座線是主力</h3><p>稻荷町站離飯店 4 分鐘，上野、銀座、澀谷都是銀座線直達不用轉車；往東京車站、原宿、新大久保則走 JR。</p></div>
     <div><h3>大餐節奏</h3><p>1/30 鰻魚、2/1 牛排、2/2 天婦羅。中間的餐都安排成迴轉壽司、韓式小吃、燒肉等輕鬆選項，腸胃與預算都好過一點。</p></div>
