@@ -1,0 +1,19 @@
+#!/bin/sh
+# push 之前先把 index.html 同步到 dist/ 並部署到 Cloudflare。
+# 啟用方式（每台電腦做一次）：git config core.hooksPath .githooks
+
+set -e
+
+root=$(git rev-parse --show-toplevel)
+cd "$root"
+
+mkdir -p dist
+cp index.html dist/index.html
+
+echo "→ 部署到 Cloudflare…"
+if wrangler deploy; then
+  echo "✓ Cloudflare 已更新：https://tokyo-winter-trip.chientaichan.workers.dev/"
+else
+  echo "✗ Cloudflare 部署失敗（GitHub Pages 仍會照常更新）。"
+  echo "  如果是登入過期，執行：wrangler login"
+fi
